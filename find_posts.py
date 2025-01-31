@@ -29,5 +29,6 @@ def find_posts(n, subreddit):
                 post_urls.append(url)
         page_url = soup.find("span", _class="next-button").find('a')['href']
         counter += 25
+        time.sleep(0.61) 
     
     return post_urls
