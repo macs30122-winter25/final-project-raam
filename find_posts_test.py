@@ -34,6 +34,8 @@ def find_posts(n, subreddit):
                 url = post.find('a')['href']
                 if url.startswith("/r/"):
                     url = "https://old.reddit.com" + url
+                if 'redd' not in url:
+                    continue
                 post_urls.append(url)
                 found_posts = True
 
