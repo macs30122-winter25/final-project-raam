@@ -39,11 +39,12 @@ def scrape_reddit_posts(post_urls, csv_filename, max_comments=50):
                 soup = bs(response.text, "html.parser")
 
                 # Extract post details with better error handling
-                title_tag = soup.find("h1")
-                title = title_tag.text.strip() if title_tag else "No Title"
+                title_tag = soup.find('div', class_="top-matter")
+                title = title_tag.find('p', class_='title').find('a').text if title_tag else "No Title"
 
-                body_tag = soup.find("div", class_="md")
-                body = body_tag.text.strip() if body_tag else "No Body"
+                body_tag = soup.find("div", class_="expando")
+                body_text_tag = body_tag.find('div', class_='md')
+                body = body_text_tag.text.strip() if body_tag else "No Body"
 
                 combined_text = title + " " + body
 
@@ -52,7 +53,6 @@ def scrape_reddit_posts(post_urls, csv_filename, max_comments=50):
 
                 timestamp_tag = soup.find("time")
                 timestamp = timestamp_tag.get("datetime", "Unknown") if timestamp_tag else "Unknown"
-
                 score_tag = soup.find("div", class_="score unvoted")
                 post_score = score_tag.text if score_tag else "Unknown"
 
