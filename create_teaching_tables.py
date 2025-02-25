@@ -99,4 +99,16 @@ FROM teaching_table_raw t
 JOIN teaching_posts p ON t.post_url = p.post_url
 """
 cursor.execute(insert_comments_table)
+
+# Cleaning Data
+cleaning_comments = """
+DELETE FROM teaching_comments
+WHERE comment_body = "No Comment" 
+OR comment_username = "AutoModerator" 
+"""
+
+cursor.execute(cleaning_comments)
+
 conn.commit()
+cursor.close()
+conn.close()
