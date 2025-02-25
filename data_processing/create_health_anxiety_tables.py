@@ -5,7 +5,7 @@ import pandas as pd
 conn = sqlite3.connect('raam_database.db')
 cursor = conn.cursor()
 
-with open('reddit_data_healthanxiety.csv', 'r') as file:
+with open('data/reddit data/reddit_data_healthanxiety.csv', 'r') as file:
     reader = csv.reader(file)
     header = next(reader)
     data = list(reader)
