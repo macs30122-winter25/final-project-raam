@@ -104,6 +104,7 @@ cursor.execute(insert_comments_table)
 cleaning_comments = """
 DELETE FROM health_anxiety_comments
 WHERE comment_body = "No Comment" 
+OR comment_body = "[deleted]"
 OR comment_username = "AutoModerator" 
 """
 
