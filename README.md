@@ -16,6 +16,7 @@ Mia - mdsowder
 ### raw_data: raw data, both scraped and ready-made ###
  - reddit_data: folder containing csvs of scraped data from old.reddit.com
  - who_data.csv: data from WHO survey on COVID-19 related mental health and financial worry
+ - Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv: data from CDC during the COVID-19 pandemic related to anxiety and depression
 
 ### reports: ###
 
