@@ -1,4 +1,5 @@
 ## final-project-raam ##
+
 final-project-raam created by GitHub Classroom
 
 River - zhiyu118
@@ -10,6 +11,10 @@ Anita - nitomanto
 Mia - mdsowder
 
 ## MACS 30122 Final Project: Change in anxiety over the COVID-19 Pandemic on Reddit ##
+
+### Project Overview: ###
+
+We are interested in looking at how health anxiety and general anxiety increased over the pandemic, and what types of anxiety in particular had the most increase. For this project, we scraped data from three subReddits from old.reddit.com: r/HealthAnxiety, r/Nursing, r/Teachers. We scraped posts in these subReddits that fell within the timeframe of January 2019 until the end of December 2021. We suplemented the data from Reddit with data from CDC and WHO surveys relating to anxiety and depression.
 
 ### data_processing: ### 
  - create_health_anxiety_tables.py: python file to create raam_database.db
