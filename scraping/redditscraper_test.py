@@ -4,7 +4,7 @@ import csv
 from bs4 import BeautifulSoup as bs
 import random
 import re
-from find_posts import find_posts  # Import function to get post URLs
+from find_posts_test import find_posts  # Import function to get post URLs
 
 def scrape_reddit_posts(post_urls, csv_filename, max_comments=50):
     """
@@ -94,8 +94,8 @@ def scrape_reddit_posts(post_urls, csv_filename, max_comments=50):
 
 # Example usage
 if __name__ == "__main__":
-    subreddit = "nursing"  # Replace with the desired subreddit
-    num_posts = 100  # Number of posts to fetch
+    subreddit = "HealthAnxiety"  # Replace with the desired subreddit
+    num_posts = 1000000  # Number of posts to fetch
     post_urls = find_posts(num_posts, subreddit)
 
     if post_urls:
