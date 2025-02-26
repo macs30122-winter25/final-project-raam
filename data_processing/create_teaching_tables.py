@@ -5,7 +5,7 @@ import pandas as pd
 conn = sqlite3.connect('raam_database.db')
 cursor = conn.cursor()
 
-with open('reddit_data_teaching.csv', 'r') as file:
+with open('raw_data/reddit_data/reddit_data_teaching.csv', 'r') as file:
     reader = csv.reader(file)
     header = next(reader)
     data = list(reader)
@@ -104,6 +104,7 @@ cursor.execute(insert_comments_table)
 cleaning_comments = """
 DELETE FROM teaching_comments
 WHERE comment_body = "No Comment" 
+OR comment_body = "[deleted]"
 OR comment_username = "AutoModerator" 
 """
 
