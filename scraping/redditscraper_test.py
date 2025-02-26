@@ -6,6 +6,9 @@ import random
 import re
 from find_posts_test import find_posts  # Import function to get post URLs
 
+# Amrita Pathak
+# Anita Sun
+
 def scrape_reddit_posts(post_urls, csv_filename, max_comments=50):
     """
     Scrapes details from Reddit posts and their comments.
