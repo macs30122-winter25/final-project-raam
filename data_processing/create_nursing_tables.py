@@ -5,12 +5,12 @@ import pandas as pd
 conn = sqlite3.connect('raam_database.db')
 cursor = conn.cursor()
 
-with open('reddit_data_healthanxiety.csv', 'r') as file:
+with open('reddit_data_nursing.csv', 'r') as file:
     reader = csv.reader(file)
     header = next(reader)
     data = list(reader)
 
-table_name = 'health_anxiety_table_raw'
+table_name = 'nursing_table_raw'
 columns = """
 timestamp TEXT
 ,username TEXT
@@ -34,7 +34,7 @@ insert_query = f'INSERT INTO {table_name} VALUES ({placeholders})'
 cursor.executemany(insert_query, data)
 
 create_post_table = """
-CREATE TABLE IF NOT EXISTS health_anxiety_posts (
+CREATE TABLE IF NOT EXISTS nursing_posts (
 post_id INTEGER PRIMARY KEY AUTOINCREMENT,
 timestamp TEXT
 ,username TEXT
@@ -47,7 +47,7 @@ timestamp TEXT
 cursor.execute(create_post_table)
 
 insert_post_table = """
-INSERT INTO health_anxiety_posts (
+INSERT INTO nursing_posts (
     timestamp, 
     username, 
     post_title, 
@@ -64,25 +64,25 @@ SELECT DISTINCT
     score, 
     comments_count, 
     post_url
-FROM health_anxiety_table_raw
+FROM nursing_table_raw
 """
 cursor.execute(insert_post_table)
 
 create_comments_table = """
-CREATE TABLE IF NOT EXISTS health_anxiety_comments (
+CREATE TABLE IF NOT EXISTS nursing_comments (
     post_id INTEGER,
     comment_id INTEGER PRIMARY KEY AUTOINCREMENT,
     comment_username TEXT,
     comment_body TEXT,
     comment_score TEXT,
     comment_timestamp TEXT,
-    FOREIGN KEY (post_id) REFERENCES health_anxiety_posts(post_id)
+    FOREIGN KEY (post_id) REFERENCES nursing_posts(post_id)
 )
 """
 cursor.execute(create_comments_table)
 
 insert_comments_table = """
-INSERT INTO health_anxiety_comments (
+INSERT INTO nursing_comments (
     post_id, 
     comment_username, 
     comment_body, 
@@ -95,14 +95,14 @@ SELECT
     t.comment_body, 
     t.comment_score, 
     t.comment_timestamp
-FROM health_anxiety_table_raw t
-JOIN health_anxiety_posts p ON t.post_url = p.post_url
+FROM nursing_table_raw t
+JOIN nursing_posts p ON t.post_url = p.post_url
 """
 cursor.execute(insert_comments_table)
 
 # Cleaning Data
 cleaning_comments = """
-DELETE FROM health_anxiety_comments
+DELETE FROM nursing_comments
 WHERE comment_body = "No Comment" 
 OR comment_username = "AutoModerator" 
 """
