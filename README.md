@@ -28,9 +28,9 @@ Mia - mdsowder
  - find_posts_test.py: python file containing function that searches old.reddit.com subreddit url until the function finds posts that is within a selected time frame (2019-2021)
  - redditscraper_test.py: python file containing function meant to scrape all text information from valid reddit posts on a subreddit
 
-### cdc_eda.ipynb: ###EDA for the CDC data on anxiety
+### cdc_eda.ipynb: EDA for the CDC data on anxiety
 
-### metadata.pdf: ###metadata for the WHO data
+### metadata.pdf: metadata for the WHO data
 
-### raam_database.db: ###database containing scraped data from reddit
+### raam_database.db: database containing scraped data from reddit
 
