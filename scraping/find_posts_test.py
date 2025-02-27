@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup as bs 
 import time
 
+# River Wang
+# Amrita Pathak
+
 def find_posts(n, subreddit):
     '''
     Find posts within a subreddit posted between January 2019 and 
