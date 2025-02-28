@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup as bs 
 import time
 
+# River Wang
+
 def find_posts(n, subreddit):
     '''
     Find posts within a subreddit posted between January 2019 and 
@@ -14,6 +16,7 @@ def find_posts(n, subreddit):
     Returns: a list of all URLs to the posts within a subreddit
     '''
     counter = 0
+    num_error = 0
     post_urls = []
     page_url = f"https://old.reddit.com/r/{subreddit}/top/?sort=top&t=all"
     time_frame = ['6 years ago', '5 years ago', '4 years ago', '3 years ago']
@@ -25,6 +28,9 @@ def find_posts(n, subreddit):
         if response.status_code != 200:
             print(f"Failed to fetch {page_url}, Status Code: {response.status_code}")
             break  # Stop if blocked
+        if response.status_code != 429:
+            num_error += 1
+            error = True
         
         soup = bs(response.text, 'html.parser')
         found_posts = False  # Track if any posts are found
@@ -52,6 +58,12 @@ def find_posts(n, subreddit):
             break  # Stop if there are no more pages
 
         counter += 25
-        time.sleep(0.61)  # Respect rate limits
+        if num_error >= 2 and error:
+            time.sleep(1.2)
+        else:
+            time.sleep(0.61)  # Respect rate limits
+            num_error = 0
+        
+        error = False
 
     return post_urls
