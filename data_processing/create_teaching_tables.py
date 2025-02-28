@@ -1,3 +1,5 @@
+# Mia Sowder
+
 import sqlite3
 import csv
 import pandas as pd
@@ -42,7 +44,11 @@ timestamp TEXT
 ,post_body TEXT
 ,score TEXT
 ,comments_count TEXT
-,post_url TEXT)
+,post_url TEXT
+,post_vader_negative_sentiment REAL
+,post_vader_neutral_sentiment REAL
+,post_vader_positive_sentiment REAL
+,post_vader_compound_sentiment REAL)
 """
 cursor.execute(create_post_table)
 
@@ -76,6 +82,10 @@ CREATE TABLE IF NOT EXISTS teaching_comments (
     comment_body TEXT,
     comment_score TEXT,
     comment_timestamp TEXT,
+    comment_vader_negative_sentiment REAL,
+    comment_vader_neutral_sentiment REAL,
+    comment_vader_positive_sentiment REAL,
+    comment_vader_compound_sentiment REAL,
     FOREIGN KEY (post_id) REFERENCES teaching_posts(post_id)
 )
 """
@@ -109,6 +119,16 @@ OR comment_username = "AutoModerator"
 """
 
 cursor.execute(cleaning_comments)
+
+cleaning_posts = """
+DELETE FROM teaching_comments
+WHERE post_title = "Anonymous" 
+OR comment_body = "[deleted]"
+OR comment_username = "AutoModerator" 
+"""
+
+cursor.execute(cleaning_posts)
+
 
 conn.commit()
 cursor.close()
