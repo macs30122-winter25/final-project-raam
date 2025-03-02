@@ -35,6 +35,10 @@ def scrape_reddit_posts(post_urls, csv_filename, max_comments=50):
             
             try:
                 response = requests.get(post_url, headers=headers, timeout=10)  # Added timeout
+                if response.status_code == 429:
+                    print(f"Failed to fetch {post_url}: {response.status_code}")
+                    time.sleep(30.0)
+                    continue
                 if response.status_code != 200:
                     print(f"Failed to fetch {post_url}: {response.status_code}")
                     continue

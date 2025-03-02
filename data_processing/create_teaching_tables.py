@@ -120,15 +120,6 @@ OR comment_username = "AutoModerator"
 
 cursor.execute(cleaning_comments)
 
-cleaning_posts = """
-DELETE FROM teaching_comments
-WHERE post_title = "Anonymous" 
-OR comment_body = "[deleted]"
-OR comment_username = "AutoModerator" 
-"""
-
-cursor.execute(cleaning_posts)
-
 
 conn.commit()
 cursor.close()

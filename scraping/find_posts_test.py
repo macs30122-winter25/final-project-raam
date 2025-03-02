@@ -59,7 +59,7 @@ def find_posts(n, subreddit):
 
         counter += 25
         if num_error >= 2 and error:
-            time.sleep(1.2)
+            time.sleep(30.0)
         else:
             time.sleep(0.61)  # Respect rate limits
             num_error = 0
