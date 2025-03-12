@@ -82,5 +82,10 @@ This repository contains all relevant code, data, and reports for this project. 
 
 ---
 
+## Use of AI
+We have consulted ChatGPT for writing our functions, but all the code should be reproducible without the use of AI.
+
+---
+
 This README will be updated as the project progresses. If you have any questions, please reach out to any of the team members. Thank you!
 
