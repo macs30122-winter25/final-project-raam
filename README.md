@@ -70,7 +70,7 @@ This repository contains all relevant code, data, and reports for this project. 
 | **Anita Sun**    | Data acquisition, data processing, EDA, video presentation, slides     |
 | **Mia Sowder**   | Data processing, VADER sentiment analysis, visualizations, slides        |
 | **River Wang**   | Web scraping, data processing, LIWC sentiment analysis, visualizations, slides     |
-| **Amrita Pathak** | Web scraping, data processing, LIWC sentiment analysis, literature review, slides |
+| **Amrita Pathak** | Web scraping, data processing, LIWC sentiment analysis, literature review     |
 
 ---
 
