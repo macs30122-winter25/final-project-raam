@@ -34,7 +34,15 @@ Using **natural language processing (NLP)** techniques such as **VADER sentiment
 
 This repository contains all relevant code, data, and reports for this project. Below is the directory structure:
 
-├── EDA/ # Exploratory Data Analysis notebooks ├── data_analysis/ # Data analysis scripts ├── data_processing/ # Scripts for cleaning and processing data ├── raw_data/ # Contains raw, unprocessed data files ├── reports/ # Contains progress reports and documentation ├── scraping/ # Web scraping scripts ├── viz/ # Scripts for generating visualizations ├── README.md # This file ├── Final Presentation Version 1.pdf # Initial presentation slides ├── Final Presentation Version 2.pdf # Updated presentation slides ├── requirements.txt 
+├── EDA/ # Exploratory Data Analysis notebooks 
+├── data_analysis/ # Data analysis scripts 
+├── data_processing/ # Scripts for cleaning and processing data 
+├── raw_data/ # Contains raw, unprocessed data files 
+├── reports/ # Contains progress reports and documentation 
+├── scraping/ # Web scraping scripts 
+├── viz/ # Scripts for generating visualizations 
+├── Final Presentation Version 1.pdf # Initial presentation slides 
+├── Final Presentation Version 2.pdf # Updated presentation slides 
 
 
 ---
@@ -54,7 +62,7 @@ This repository contains all relevant code, data, and reports for this project. 
 
 - **In-Class Presentation Slides:** [Final Presentation Version 1](https://github.com/macs30122-winter25/final-project-raam/blob/main/Final%20Presentation%20Version%201.pdf)
 - **Updated Presentation Slides (after feedback):** [Final Presentation Version 2](https://github.com/macs30122-winter25/final-project-raam/blob/main/Final%20Presentation%20Version%202.pdf)
-- **Project Video:** [Video Link](https://photos.app.goo.gl/t2XZjAfnYf9E2E7LA) _(Do not upload the video to GitHub)_
+- **Project Video:** [Video Link](https://photos.app.goo.gl/t2XZjAfnYf9E2E7LA) 
 
 ---
 
