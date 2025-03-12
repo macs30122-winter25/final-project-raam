@@ -35,22 +35,38 @@ Using **natural language processing (NLP)** techniques such as **VADER sentiment
 This repository contains all relevant code, data, and reports for this project. Below is the directory structure:
 
 ├── 📂 EDA/
+
 │ ├── Exploratory Data Analysis notebooks 
 ├── 📂 data_analysis/
+
 │ ├── Data analysis scripts 
+
 ├── 📂 data_processing/
+
 │ ├── Scripts for cleaning and processing data 
+
 ├── 📂 raw_data/
+
 │ ├── Contains raw, unprocessed data files 
+
 ├── 📂 reports/
+
 │ ├── Contains progress reports and documentation 
+
 ├── 📂 scraping/
+
 │ ├── Web scraping scripts 
+
 ├── 📂 viz/
+
 │ ├── Scripts for generating visualizations 
+
 ├── 📄 Final Presentation Version 1.pdf
+
 │ ├── Initial presentation slides for class
+
 ├── 📄 Final Presentation Version 2.pdf
+
 │ ├── Updated presentation slides
 
 ---
