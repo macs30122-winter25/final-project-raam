@@ -23,10 +23,11 @@ Using **natural language processing (NLP)** techniques such as **VADER sentiment
 
 ### Summary of Main Findings 
 
-- There was an increase in anxiety in the first half of 2020 shown in scraped and supplementary datasets.
 - `r/Nursing` displayed higher rates of anxiety on average than `r/Teachers`
-- Anxiety reached its peak around the middle of 2021 in all three subReddits.
-- However, while anxiety increased in the first half 2021 on all the subReddits, anxiety levels declined in the general American adult population.
+- `r/Nursing` and `r/Teachers` did not seem to display much higher levels of anxiety compared to `r/HealthAnxiety`
+- There was an increase in anxiety in the first half of 2020 shown in scraped and supplementary data
+- Anxiety reached its peak around the middle of 2021 in all three subReddits
+- While anxiety increased in the first half 2021 on all the subReddits, anxiety levels declined in the general American adult population
   
 ---
 
