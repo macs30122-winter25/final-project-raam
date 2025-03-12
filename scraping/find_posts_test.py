@@ -1,8 +1,9 @@
+# River Wang
+# write a function for retrieving links to posts from relevant subreddits
+
 import requests                     
 from bs4 import BeautifulSoup as bs 
 import time
-
-# River Wang
 
 def find_posts(n, subreddit):
     '''
