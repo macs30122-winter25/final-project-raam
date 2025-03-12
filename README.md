@@ -1,4 +1,4 @@
-# README - Team RAAM Final Project
+# README - Team RAAM Project
 
 ## Table of Contents
 
@@ -19,13 +19,13 @@ Team RAAM is studying the changes in anxiety in essential workers on Reddit in c
 
 To address this, we analyze text data scraped from Reddit subreddits related to different worker populations: `r/Nursing` (healthcare workers), `r/Teachers` (education workers), and `r/HealthAnxiety` (general anxiety discussions). Additionally, we compare this to anxiety data from external sources such as the CDC and WHO.
 
-Using **natural language processing (NLP)** techniques such as **VADER sentiment analysis** and **topic modeling**, we identify anxiety trends, classify different types of anxiety, and compare rates of increase across different groups.
+Using **natural language processing (NLP)** techniques such as **VADER sentiment analysis** and **LIWC**, we identify anxiety trends, classify different types of anxiety, and compare rates of increase across different groups.
 
-### Summary of Main Findings (To be Updated)
+### Summary of Main Findings 
 
-- Initial analysis suggests that anxiety-related discussions increased significantly post-COVID, particularly in `r/Nursing` and `r/Teachers`.
-- Sentiment analysis indicates a rise in negative sentiment in Reddit discussions during peak pandemic periods.
-- Topic modeling reveals an increase in health-related anxiety and occupational stress, with nurses reporting the highest levels of anxiety.
+- .
+- 
+- 
 
 ---
 
