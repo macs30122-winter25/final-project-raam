@@ -1,41 +1,61 @@
-## final-project-raam ##
+# README - Team RAAM Final Project
 
-final-project-raam created by GitHub Classroom
+## Table of Contents
 
-River - zhiyu118
+1. [Project Overview](#project-overview)
+2. [GitHub Repository Navigation](#github-repository-navigation)
+3. [Team Members & Responsibilities](#team-members--responsibilities)
+4. [Links to Presentation & Video](#links-to-presentation--video)
 
-Amrita - amritapathak1
+---
 
-Anita - nitomanto
+## Project Overview
 
-Mia - mdsowder
+### Research Question & Relevance
 
-## MACS 30122 Final Project: Change in anxiety over the COVID-19 Pandemic on Reddit ##
+Team RAAM is studying the changes in anxiety in essential workers on Reddit in comparison to the general population during the onset of COVID-19. Our primary research question is:
 
-### Project Overview: ###
+- **How did COVID-19 impact the different types and rates of anxiety in essential worker positions compared to the general population?**
 
-We are interested in looking at how health anxiety and general anxiety increased over the pandemic, and what types of anxiety in particular had the most increase. For this project, we scraped data from three subReddits from old.reddit.com: r/HealthAnxiety, r/Nursing, r/Teachers. We scraped posts in these subReddits that fell within the timeframe of January 2019 until the end of December 2021. We suplemented the data from Reddit with data from CDC and WHO surveys relating to anxiety and depression.
+To address this, we analyze text data scraped from Reddit subreddits related to different worker populations: `r/Nursing` (healthcare workers), `r/Teachers` (education workers), and `r/HealthAnxiety` (general anxiety discussions). Additionally, we compare this to anxiety data from external sources such as the CDC and WHO.
 
-### data_processing: ### 
- - create_health_anxiety_tables.py: python file to create raam_database.db
- - create_nursing_tables.py: python file to create raam_database.db
- - create_teaching_tables.py: python file to create raam_database.db
+Using **natural language processing (NLP)** techniques such as **VADER sentiment analysis** and **topic modeling**, we identify anxiety trends, classify different types of anxiety, and compare rates of increase across different groups.
 
-### raw_data: raw data, both scraped and ready-made ###
- - reddit_data: folder containing csvs of scraped data from old.reddit.com
- - who_data.csv: data from WHO survey on COVID-19 related mental health and financial worry
- - Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv: data from CDC during the COVID-19 pandemic related to anxiety and depression
+### Summary of Main Findings (To be Updated)
 
-### reports: ###
- - Progress Report 1.pdf: first progress report
+- Initial analysis suggests that anxiety-related discussions increased significantly post-COVID, particularly in `r/Nursing` and `r/Teachers`.
+- Sentiment analysis indicates a rise in negative sentiment in Reddit discussions during peak pandemic periods.
+- Topic modeling reveals an increase in health-related anxiety and occupational stress, with nurses reporting the highest levels of anxiety.
 
-### scraping: scraper functions ###
- - find_posts_test.py: python file containing function that searches old.reddit.com subreddit url until the function finds posts that is within a selected time frame (2019-2021)
- - redditscraper_test.py: python file containing function meant to scrape all text information from valid reddit posts on a subreddit
+---
 
-### cdc_eda.ipynb: EDA for the CDC data on anxiety
+## GitHub Repository Navigation
 
-### metadata.pdf: metadata for the WHO data
+This repository contains all relevant code, data, and reports for this project. Below is the directory structure:
 
-### raam_database.db: database containing scraped data from reddit
+├── EDA/ # Exploratory Data Analysis notebooks ├── data_analysis/ # Data analysis scripts ├── data_processing/ # Scripts for cleaning and processing data ├── raw_data/ # Contains raw, unprocessed data files ├── reports/ # Contains progress reports and documentation ├── scraping/ # Web scraping scripts ├── viz/ # Scripts for generating visualizations ├── README.md # This file ├── Final Presentation Version 1.pdf # Initial presentation slides ├── Final Presentation Version 2.pdf # Updated presentation slides ├── requirements.txt 
+
+
+---
+
+## Team Members & Responsibilities
+
+| Name          | Role & Responsibilities                                                            |
+|--------------|----------------------------------------------------------------------------------|
+| **Anita Sun**    | Data preprocessing, supplementary datasets, README, exploratory visualizations     |
+| **Mia Sowder**   | Data cleaning, SQL database setup, VADER sentiment analysis, visualizations        |
+| **River Wang**   | Web scraping, exploratory data analysis, supplementary data analysis, LIWC       |
+| **Amrita Pathak** | Web scraping, topic modeling (LIWC), literature review, README |
+
+---
+
+## Links to Presentation & Video
+
+- **In-Class Presentation Slides:** [Final Presentation Version 1](https://github.com/macs30122-winter25/final-project-raam/blob/main/Final%20Presentation%20Version%201.pdf)
+- **Updated Presentation Slides (after feedback):** [Final Presentation Version 2](https://github.com/macs30122-winter25/final-project-raam/blob/main/Final%20Presentation%20Version%202.pdf)
+- **Project Video:** [Google Drive Link](#) _(Do not upload the video to GitHub)_
+
+---
+
+This README will be updated as the project progresses. If you have any questions, please reach out to any of the team members. Thank you!
 
