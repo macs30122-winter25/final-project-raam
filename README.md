@@ -87,5 +87,5 @@ We have consulted ChatGPT for writing our functions, but all the code should be 
 
 ---
 
-This README will be updated as the project progresses. If you have any questions, please reach out to any of the team members. Thank you!
+This README is the map to the project. If you have any questions, please reach out to any of the team members. Thank you!
 
