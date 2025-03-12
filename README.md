@@ -62,7 +62,7 @@ This repository contains all relevant code, data, and reports for this project. 
 | **Anita Sun**    | Data preprocessing, supplementary datasets, README, exploratory visualizations     |
 | **Mia Sowder**   | Data cleaning, SQL database setup, VADER sentiment analysis, visualizations        |
 | **River Wang**   | Web scraping, exploratory data analysis, supplementary data analysis, LIWC       |
-| **Amrita Pathak** | Web scraping, topic modeling (LIWC), literature review, README |
+| **Amrita Pathak** | Web scraping, data cleaning, topic modeling (LIWC), literature review, README |
 
 ---
 
